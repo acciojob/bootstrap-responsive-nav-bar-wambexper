@@ -1,16 +1,91 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Bootstrap Navbar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Bootcamps Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="bootcampsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Bootcamps
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="bootcampsDropdown">
+              <li><a class="dropdown-item" href="#">Popular Bootcamps</a></li>
+              <li><a class="dropdown-item" href="#">Bootcamp Developers</a></li>
+              <li><a class="dropdown-item" href="#">Bootcamp Financing</a></li>
+              <li><a class="dropdown-item" href="#">Bootcamp Grads and Alumni</a></li>
+            </ul>
+          </li>
 
+          <!-- Coding Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="codingDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Coding
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="codingDropdown">
+              <li><a class="dropdown-item" href="#">Coding Tools</a></li>
+              <li><a class="dropdown-item" href="#">HTML</a></li>
+              <li><a class="dropdown-item" href="#">CSS</a></li>
+              <li><a class="dropdown-item" href="#">JS</a></li>
+              <li><a class="dropdown-item" href="#">PYTHON</a></li>
+              <li><a class="dropdown-item" href="#">Ruby</a></li>
+              <li><a class="dropdown-item" href="#">C++</a></li>
+              <li><a class="dropdown-item" href="#">Java</a></li>
+            </ul>
+          </li>
+
+          <!-- Career Resources Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="careerResourcesDropdown" role="button"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Career Resources
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="careerResourcesDropdown">
+              <li><a class="dropdown-item" href="#">Career Advice</a></li>
+              <li><a class="dropdown-item" href="#">Interviews</a></li>
+              <li><a class="dropdown-item" href="#">Tech Cities</a></li>
+              <li><a class="dropdown-item" href="#">Tech Salaries</a></li>
+            </ul>
+          </li>
+
+          <!-- Tech Fields Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="techFieldsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Tech Fields
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="techFieldsDropdown">
+              <li><a class="dropdown-item" href="#">Web Design</a></li>
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li><a class="dropdown-item" href="#">Software Engineering</a></li>
+              <li><a class="dropdown-item" href="#">Data Science</a></li>
+            </ul>
+          </li>
+
+          <!-- News & Commentary Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">News & Commentary</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
 </body>
-
 </html>
